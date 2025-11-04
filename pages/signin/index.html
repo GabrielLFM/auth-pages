@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <main>
-      <section>
-        <div class="form-container">
-            <h1>Welcome back!</h1>
-            <p>Enter your Credentials to access your account</p>
-            <form action="" method="post">
-              <fieldset>
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" />
-              </fieldset>
-              <fieldset>
-                <div class="title-wrapper">
-                    <label for="password">Password</label>
-                    <a href="">forgot password</a>
-                </div>
-                <input type="password" name="password" id="password" />
-              </fieldset>
-              <fieldset>
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox">Remember for 30 days</label>
-              </fieldset>
-              <button type="submit">Login</button>
-            </form>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="./../js/login.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Signin</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="form-container">
+        <h1>Welcome back!</h1>
+        <h2>Enter your credentials to access your account</h2>
+        <form action="" method="post">
+          <fieldset>
+            <label for="email">Email address</label>
+            <input placeholder="Enter your email" type="email" name="email" id="email" required>
+          </fieldset>
+          <fieldset>
+            <div class="title-wrapper">
+              <label for="password">Password</label>
+              <a href="#">forgot password</a>
+            </div>
+            <input placeholder="Enter your password" type="password" name="password" id="password" required>
+          </fieldset>
+          <fieldset class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="">Remember for 30 days</label>
+          </fieldset>
+          <button type="submit">Login</button>
+        </form>
+
+        <div class="divider">
+          <div class="line"></div>
+          <p>Or</p>
+          <div class="line"></div>
         </div>
-      </section>
-      <img src="../assests/images/tulipa.jpg" alt="foto de uma tulipa" />
-    </main>
-  </body>
+        <div class="sso-container">
+          <button>
+            <img src="../assests/icons/google-logo.svg" alt="logo google">
+            <p>Sign in with Google</p>
+          </button>
+          <button>
+            <img src="../assests/icons/apple-logo.svg" alt="logo google">
+            <p>Sign in with Apple</p>
+          </button>
+        </div>
+        <p class="redirect-sign-up">Don't have an account? <a href="../signup/index.html">Sign Up</a></p>
+      </div>
+    </section>
+
+    <img src="../assests/images/costela-de-adao.png" alt="Foto de uma planta costela de Adão.">
+  </main>
+</body>
+
 </html>

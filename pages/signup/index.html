@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Signup</title>
 </head>
+
 <body>
-    
+  <main>
+    <section>
+      <div class="form-container">
+        <h1>Get Started Now</h1>
+        <form action="" method="post">
+          <fieldset>
+            <label for="name">Name</label>
+            <input placeholder="Enter your name" type="text" name="name" id="name" required>
+          </fieldset>
+          <fieldset>
+            <label for="email">Email address</label>
+            <input placeholder="Enter your email" type="email" name="email" id="email" required>
+          </fieldset>
+          <fieldset>
+              <label for="password">Password</label>
+              <input placeholder="Enter your password" type="password" name="password" id="password" required>
+          </fieldset>
+          <fieldset class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" required>
+            <label for="">I agree to the <a href="#">terms & policy</a></label>
+          </fieldset>
+          <button type="submit">Signup</button>
+        </form>
+
+        <div class="divider">
+          <div class="line"></div>
+          <p>Or</p>
+          <div class="line"></div>
+        </div>
+        <div class="sso-container">
+          <button>
+            <img src="../assests/icons/google-logo.svg" alt="logo google">
+            <p>Sign in with Google</p>
+          </button>
+          <button>
+            <img src="../assests/icons/apple-logo.svg" alt="logo google">
+            <p>Sign in with Apple</p>
+          </button>
+        </div>
+        <p class="redirect-sign-in">Have an account? <a href="../signin/index.html">Sign In</a></p>
+      </div>
+    </section>
+
+    <img src="../assests/images/costela-de-adao.png" alt="Foto de uma planta costela de Adão.">
+  </main>
 </body>
+
 </html>
